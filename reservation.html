@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+  flex-wrap: wrap;
+  overflow-x: hidden; 
+  background-color: black;
+}
+
+.menu {
+   
+    width: 100%;
+    height: 12%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+box-shadow: 2PX white;
+    transition:all 1s linear;
+}
+.menu:hover{
+
+  visibility: visible;
+  height: 20%;
+  
+}
+
+.menu:hover .logo{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+  }
+  .menu:hover .logob{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 1;
+  }
+
+.menu:hover nav ul li a {
+      text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+  }
+
+
+  nav ul {
+
+    position: relative;
+    left: 41%;
+    margin: 20px;
+
+    visibility: visible;
+  } 
+
+     nav ul li {
+        
+        display: inline-block;
+        letter-spacing: 1px;
+        margin-right: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        font-family:  sans-serif;
+       text-transform: uppercase;
+       font-weight: 510;
+
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #FFF;
+      padding:  0px  30px;
+      transition:all 1s linear;
+  }
+ 
+
+
+
+
+      .banner1
+       {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      img{
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+      }
+
+         
+        
+         .logo{
+
+    padding-right: 83%;
+    padding-top: 1px;
+    /*height: 50%;
+    width: 10%;*/
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+  .logob{
+    padding-right: 83%;
+    padding-top: 1px;
+    opacity: 0;
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+
+
+
+
+
+
+.pra{
+  font-size: 20px;
+   font-family: gabriola;
+   position: relative;
+   
+   left: 20%;
+   padding: 0;
+       padding-top: 282px;
+   display: inline-block;
+}
+.headTr{
+  width: 100%;
+  height:400px;
+  margin-right: 100px;
+  padding: 0;
+}
+.tria{
+  position: relative;
+  text-align: center;
+  left: 10%;
+    top: 40%;
+  width:40% ;
+  height: 500px;
+  background-color: white;
+  align-items: center;
+
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-top-left-radius: 50px 50px;
+  border-bottom-left-radius: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+   
+}
+
+.imgbook{
+background-image: url('nsu-10.jpg');
+background-size: cover;
+background-position: right;
+position: relative;
+  left: 50%;
+  top:-85%;
+  width:40% ;
+  height: 500px;
+  align-items: center;
+  border-top-right-radius: 50px 50px;
+  border-bottom-right-radius: 50px 50px;
+
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+}
+
+
+.febr{
+  font-family: sans-serif;
+  margin-left: 38%;
+  color: white;
+  
+}
+.box{
+
+  width: 280px;
+  height: 308px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 45px;
+  padding: 0px;
+background: white;
+border-radius: 50px;
+border:2px;
+border-style: solid;
+border-color: black;
+}
+
+.boxi{
+
+  width: 280px;
+   height: 308px;
+ display: inline-block;
+   overflow: hidden;
+  margin: 45px;
+  padding: 0px;
+  margin-left: 9%;
+background: white;
+border-radius: 50px;
+border:2px;
+border-style: solid;
+border-color: black;
+}
+.box:hover{
+  background: #444;
+}
+
+   .boxi:hover{
+  background: #444;
+} 
+    .boxIn{
+      position: relative;
+        width: 400px;
+        height: 251px;
+        overflow: hidden;
+    }
+    
+    
+.boxIn img{
+
+  padding: 0px;
+  width: 90%;
+  height: 100%;
+  left: 36%;
+
+  
+
+}
+
+.prg h4{
+  font-family: gabriola;
+  font-size: 30px;
+ margin-top: 2%;
+ margin-left: 33%;
+
+}
+
+
+.carburant{
+  display: flex;
+  flex-direction: row;
+   background: #ff4646;
+   justify-content: space-between;
+    align-content: center;
+  height:  50px;
+   width: 70%;
+  color: white;
+  font-family: gabriola;
+  font-size: 20px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  margin-right: 30px;
+  margin-top: 54px;
+
+}
+
+.boitevitesse{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+   background: #ff4646;
+  height:  50px;
+   width: 40%;
+  color: white;
+  border-radius: 20px;
+  font-family: gabriola;
+  font-size: 20px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 30px;
+  margin-top: 54px;
+
+}
+.duree{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+     margin-top: 54px;
+
+
+}
+input[type="number"]{
+  width: 200px;
+   height: 40px;
+  border:2px solid #ff4646;
+  border-radius: 20px;
+}
+.button{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+
+    
+    
+
+}
+input[type="button"]{
+  background: #ff4646;
+  border-radius: 20px;
+  margin-top: 54px;
+   width: 150px;
+    outline: none;
+   height: 40px;
+}
+
+footer{
+  width: 100%;
+    height: 377px;
+    background-color: white;
+    margin-bottom: 0%;
+}
+.footer1{
+  width: 100%;
+    height: 277px;
+    background-color: white;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
+}
+.footer{
+   display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+}
+
+.line{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+
+  padding-top: 5%;/*
+  padding-right: : 10%;*/
+}
+i{
+  position: absolute;
+  padding-top: 18%;
+}
+span{
+background: red;
+          height: 2px;
+          margin-top:2% ;
+          width: 100%;
+          position: absolute;
+          left: 0;
+        }
+
+
+.line img{
+  position: relative;
+    height: 93px;
+    width: 181px;
+    margin-bottom: 40%;
+    margin-top: -38%;
+   
+
+}
+
+/*
+.line1{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+  padding-top: 1%;
+  padding-right: 10%;
+}*/
+.line1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 21%;
+    padding-top: 2%;
+}
+.line1 b{
+  margin: 0 8%;
+  font-size: 20px;
+  padding: 0;
+
+}
+
+
+
+
+
+
+
+    </style>
+
+
+ 
+</head>
+<body>
+  <div class="RR">
+    
+                  <div class="banner1">
+                      <img src="carrr.jpeg">
+                 </div>
+            </div>
+             
+             <div class="febr">
+                     <h1>online booking</h1>
+            </div>
+
+                   <div class="box">
+                     <div class="boxIn">
+                        <img src="nsu-10.jpg" onclick="Moto()" >
+                      </div>
+                         <div class="prg">
+                               <h4>Moto</h4>
+                               
+                        </div>
+                  </div>
+
+                  <div class="box">
+                     <div class="boxIn">
+                        <img src="car_quotation_testdrive-1c3207a708.png"  onclick="Compact()">
+                      </div>
+                         <div class="prg">
+                               <h4>Compact</h4>
+                         
+                        </div>
+                  </div>
+
+
+                  <div class="box">
+                     <div class="boxIn">
+                        <img src="OIP.jfif" onclick="Citadin()">
+                      </div>
+                         <div class="prg">
+                               <h4>Citadin</h4>
+                              
+                        </div>
+                  </div>
+
+
+                  <div class="box">
+                     <div class="boxIn">
+                        <img src="7d955da414a9d1de381bcbaff5bdd033.png" onclick="Utilitaire()">
+                      </div>
+                         <div class="prg">
+                               <h4>Utilitaire</h4>
+                                
+                        </div>
+                  </div>
+
+                  <div class="boxi">
+                     <div class="boxIn">
+                        <img src="location-berline-aald-72.jpg" onclick="Berline()" >
+                      </div>
+                         <div class="prg">
+                               <h4>Berline</h4>
+                                
+                        </div>
+                  </div>
+
+
+
+                  <div class="boxi">
+                     <div class="boxIn">
+                        <img src="Ra57548c09c7e5da263db209b3ddd8161.jfif"onclick="EngindeChantier()" >
+                      </div>
+                         <div class="prg">
+                               <h4>Engin de Chantier</h4>
+                                
+                        </div>
+                  </div>
+
+
+
+
+                  <div class="boxi">
+                     <div class="boxIn">
+                        <img src="7552_540553504.jpg" onclick="Camion()">
+                      </div>
+                         <div class="prg">
+                               <h4>Camion</h4>
+                               
+                        </div>
+                  </div>
+
+
+
+
+
+
+
+                   <div class="headTr">
+                          <div class="imgg"></div>
+                               <div class="tria">
+                                <div class="carburant" id="carburant">
+                                 <div class="cntt" id="Essence">
+                                   <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                                   <label>Essence</label>
+                                 </div>
+
+
+
+                                <div class="cntt" id="Dissel">
+                                   <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                                   <label>Dissel</label>
+                                  </div>
+
+                                  <div class="cntt" id="Electrique">
+                                    <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                                    <label>Electrique</label>
+                                  </div>
+
+                                  <div class="cntt" id="Hybride">
+                                   <input type="radio" id="vehicle1" name="vehicle1" value="Bike">
+                                   <label>Hybride</label>
+                                 </div>
+
+
+                                  </div>
+
+                                      <div class="boitevitesse" id="boitv">
+
+                                        <div class="cntt" id="Manuelle">
+                                        <input type="radio" id="vehicle1" name="ii" value="Bike">
+                                        <label>Manuelle</label>
+                                      </div>
+
+
+
+                                      <div class="cntt" id="Automatique">
+                                        <input type="radio" id="vehicle1" name="ii" value="Bike">
+                                        <label>Automatique</label>
+                                      </div>
+                                      </div>
+
+
+                                 <div class="duree">
+                                   <input type="number" name="duree" min="1" max="30" id="numberj">
+                                 </div>
+                                 <label id="pr"></label>
+                                 <div class="button">
+                                   <input type="button" name="button" value="submit"  onclick="calculeprix()">
+                                 </div>
+
+                                </div>
+                                <div class="imgbook" id="myImage">
+                                  
+                                </div>
+                        </div>
+
+
+
+
+
+
+
+
+                 <div class="menu">
+<img src="AUTOABDA-white.png" class="logo" alt="Logo">
+    <img src="AUTOABDA_black.png" class="logob" alt="Logo">
+    
+       
+
+            <nav>
+                <ul>  
+                 <li> <a href="home.html">Home</a></li>
+                    <li> <a href="gallery.html" >GALLERY</a></li>
+                    <li><a href="reservation.html" style="color:#b32137;">Reservation</a></li>
+                    <li><a href="contact.html" >Contact US</a></li>
+                    
+                              
+                </ul>
+            </nav>
+           
+        
+    </div>
+
+</div>
+
+
+                
+                  <footer>
+            <div class="footer">
+             <div class="line1">
+              <b >Model Overview</b>
+               <b >Model Overview</b>
+               <b >Model Overview</b>
+               </div>
+            <div class="footer1">
+              
+             
+              <span></span>
+              <div class="line">
+               <img src="AUTOABDA_black.png">
+               <b>FATYcar.com</b>
+                
+              </div>
+
+              <div class="line">
+               <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+              
+              </div>
+
+               <div class="line">
+              <b>Electromobility</b>
+                <b>Innovation</b>
+                <b>Design</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+
+               <div class="line">
+                <b>Daimler AG</b>
+                <b>Vulnerability Reporting Policy</b>
+                <b>Customer Centre Sindelfingen</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+             
+              <i>© 2021 FATYcar.com. All rights reserved. FATYcar.com, Inc. is an Expedia Group Company.</i>
+                 
+               
+               
+             
+             </div>
+</div>
+               
+          </footer>
+
+                 
+    <script type="text/javascript">
+      
+      var typeVehicule = [
+    {type:"moto",prix:100},
+    {type:"citadin",prix:120},
+    {type:"compact",prix:140},
+    {type:"berlin",prix:200},
+    {type:"utilitaire",prix:160},
+    {type:"camion",prix:2500},
+    {type:"engin",prix:9000}
+];
+var boitevitesse=0;
+      var carburant=0;
+      var prix=0;
+
+      function Moto(){
+      document.getElementById("myImage").style.background = "url('nsu-10.jpg')no-repeat center";
+
+      document.getElementById("Essence").style.visibility = "visible";
+      document.getElementById("Electrique").style.visibility = "visible";
+      document.getElementById("Hybride").style.visibility = "hidden";
+      document.getElementById("Dissel").style.visibility = "hidden";
+
+      document.getElementById("boitv").style.visibility = "hidden";
+
+      document.getElementById("Manuelle").style.visibility = "hidden";
+      document.getElementById("Automatique").style.visibility = "hidden";
+      document.getElementById("carburant").style.width = "50%";
+       prix=10;
+
+      
+     }
+
+      function Compact(){
+      document.getElementById("myImage").style.background = "url('car_quotation_testdrive-1c3207a708.png')no-repeat center";
+      document.getElementById("Essence").style.visibility = "visible";
+      document.getElementById("Electrique").style.visibility = "hidden";
+      document.getElementById("Hybride").style.visibility = "visible";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible" ;
+
+      document.getElementById("Manuelle").style.visibility = "visible";
+      document.getElementById("Automatique").style.visibility = "hidden";
+      document.getElementById("carburant").style.width = "50%";
+      prix=14;
+     }
+
+
+      function Citadin(){
+      document.getElementById("myImage").style.background = "url('OIP.jfif')no-repeat center";
+        document.getElementById("Essence").style.visibility = "visible";
+      document.getElementById("Electrique").style.visibility = "visible";
+      document.getElementById("Hybride").style.visibility = "visible";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible";
+
+      document.getElementById("Manuelle").style.visibility = "visible";
+      document.getElementById("Automatique").style.visibility = "hidden";
+      document.getElementById("carburant").style.width = "70%";
+      prix=12;
+
+     }
+
+      function Utilitaire(){
+      document.getElementById("myImage").style.background = "url('7d955da414a9d1de381bcbaff5bdd033.png')no-repeat center";
+       document.getElementById("Essence").style.visibility = "hidden";
+      document.getElementById("Electrique").style.visibility = "hidden";
+      document.getElementById("Hybride").style.visibility = "hidden";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible";
+
+      document.getElementById("Manuelle").style.visibility = "visible";
+      document.getElementById("Automatique").style.visibility = "hidden";
+
+      document.getElementById("carburant").style.width = "50%";
+      prix=16;
+     }
+
+
+      function Berline(){
+      document.getElementById("myImage").style.background = "url('location-berline-aald-72.jpg')no-repeat center";
+      document.getElementById("Essence").style.visibility = "visible";
+      document.getElementById("Electrique").style.visibility = "hidden";
+      document.getElementById("Hybride").style.visibility = "visible";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible";
+
+      document.getElementById("Manuelle").style.visibility = "hidden";
+      document.getElementById("Automatique").style.visibility = "visible";
+
+      document.getElementById("carburant").style.width = "50%";
+      prix=20;
+     }
+
+
+      function EngindeChantier(){
+      document.getElementById("myImage").style.background = "url('Ra57548c09c7e5da263db209b3ddd8161.jfif')no-repeat center";
+      document.getElementById("Essence").style.visibility = "visible";
+      document.getElementById("Electrique").style.visibility = "hidden";
+      document.getElementById("Hybride").style.visibility = "hidden";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible";
+
+      document.getElementById("Manuelle").style.visibility = "visible";
+      document.getElementById("Automatique").style.visibility = "hidden";
+
+      document.getElementById("carburant").style.width = "50%";
+      prix=900;
+     }
+
+
+      function Camion(){
+      document.getElementById("myImage").style.background = "url('7552_540553504.jpg')no-repeat center";
+      document.getElementById("Essence").style.visibility = "hidden";
+      document.getElementById("Electrique").style.visibility = "hidden";
+      document.getElementById("Hybride").style.visibility = "hidden";
+      document.getElementById("Dissel").style.visibility = "visible";
+
+      document.getElementById("boitv").style.visibility = "visible";
+
+      document.getElementById("Manuelle").style.visibility = "hidden";
+      document.getElementById("Automatique").style.visibility = "visible";
+     document.getElementById("carburant").style.width = "50%";
+      prix=250;
+     }
+
+
+function calculeprix(){
+
+if(prix==0){
+  alert('selectioner type');
+}
+
+  var numberj=document.getElementById('numberj').value;
+  var i=0;
+  var tabC=[5,9,14,21];
+  var tabv=[1,19];
+
+  var rates = document.getElementsByName('vehicle1');
+  var btvs = document.getElementsByName('ii');
+  var rate_value=-1;
+  var ii_value=-1;
+  var prixv_value;
+  for(i = 0; i < rates.length; i++){
+      if(rates[i].checked){
+          rate_value = i;
+    }
+}
+  if(rate_value!=-1)
+     carburant=tabC[rate_value];
+    for(i = 0; i < btvs.length; i++){
+      if(btvs[i].checked){
+          bv_value = i;
+    }
+}
+  if(bv_value!=-1)
+    boitevitesse=tabv[bv_value];
+    var prixtotale= (prix+carburant*100/prix  + boitevitesse*100/prix)*numberj;
+    document.getElementById("pr").innerHTML=prixtotale;
+}
+
+
+    </script>
+            
+</body>
+
+</html>

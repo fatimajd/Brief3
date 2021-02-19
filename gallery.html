@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+
+      body{
+        
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+  flex-wrap: wrap; 
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.menu {
+   
+    width: 100%;
+    height: 12%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+box-shadow: 2PX white;
+    transition:all 1s linear;
+}
+.menu:hover{
+
+  visibility: visible;
+  height: 20%;
+  
+}
+
+.menu:hover .logo{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+  }
+  .menu:hover .logob{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 1;
+  }
+
+.menu:hover nav ul li a {
+      text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+  }
+
+
+  nav ul {
+
+    position: relative;
+    left: 41%;
+    margin: 20px;
+
+    visibility: visible;
+  } 
+
+     nav ul li {
+        
+        display: inline-block;
+        letter-spacing: 1px;
+        margin-right: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        font-family:  sans-serif;
+       text-transform: uppercase;
+       font-weight: 510;
+
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #FFF;
+      padding:  0px  30px;
+      transition:all 1s linear;
+  }
+ 
+
+
+
+
+      .banner1
+       {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      img{
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+      }
+      .textbox{
+        width: 300px;
+        position: absolute;
+        top: 200px;
+        left: 150px;
+        color: #fff;
+      }
+         .textbox h1{
+           margin-bottom: 40px;
+         }
+         .textbox p{
+          font-size: 14px;
+          line-height: 18px;
+           margin-top: 80px;
+         }
+         .textbox span{
+          background: red;
+          height: 2px;
+          width: 100px;
+          position: absolute;
+          left: 0;
+         }
+         
+        
+         .logo{
+
+    padding-right: 83%;
+    padding-top: 1px;
+    /*height: 50%;
+    width: 10%;*/
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+  .logob{
+    padding-right: 83%;
+    padding-top: 1px;
+    opacity: 0;
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+
+.img1{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 75%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        visibility: visible;
+}
+.img2{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 62%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        
+}
+.img3{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 49%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        
+}
+.img1{
+  animation: img1 1s ease ;
+}
+.img2{
+  animation: img2 2s ease;
+}
+.img3{
+  animation: img3 3s ease;
+}
+
+        @keyframes img1{
+          0%{
+             left: 62%;
+          }
+          50%{
+            left: 62%;
+          }
+           100%{
+            left: 75%;
+          }
+        }
+
+        @keyframes img2{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+          }
+        }
+
+         @keyframes img3{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+          }
+        }
+        .h1{
+  position: relative;
+  padding-top: 0%;
+  left: 35%;
+  font-family: gabriola;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  
+   text-shadow: 1px 1px 2px #DFD1D1, 0 0 25px red;
+            letter-spacing: 20px;
+  
+}
+.h1{
+   animation: h1 1s ease ;
+}
+
+
+ @keyframes h1{
+          0%{
+            
+            visibility: hidden;
+          }
+          50%{
+           text-shadow: 0 0 3px red, 0 0 5px red;
+           visibility: visible;
+          
+           letter-spacing: 10px;
+          }
+           100%{
+            text-shadow: 1px 1px 2px #DFD1D1, 0 0 25px #DFD1D1;
+            letter-spacing: 20px;
+            
+           visibility: visible;
+          }
+        }
+
+#wrapper {
+  width: 70%;
+  margin: 27px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #DFD1D1;
+}
+
+
+
+
+form {
+  margin: -17px  auto;
+}
+.textInput {
+  border: none;
+  height: 53px;
+  margin: 24px;
+  margin-left: 170px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.4s linear;
+}
+.tx {
+  border: none;
+ 
+  margin: 24px;
+  margin-left: 170px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.4s linear;
+}
+.textInput:focus {
+  margin-left: 140px;
+  outline: none;
+   width: 78%;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+.tx:focus {
+ margin-left: 140px;
+   width: 78%;
+  outline: none;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+.btn {
+  cursor: pointer;
+  width: 25%;
+  border: none;
+  margin-top: 2px;
+  color: white;
+  background-color: #111;
+  border-radius: 20px;
+  padding: 12px;
+  margin-left: 400px;
+
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+}
+.btn:focus {
+
+   width: 25%;
+  outline: none;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+#wrapper{
+  animation: wrapper 5s ease ;
+ }
+
+ @keyframes wrapper{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+}}
+.febr{
+  font-family: sans-serif;
+  margin-left: 45%;
+  color: white;
+  margin-top: 10%;
+  
+}
+.box{
+
+  width: 280px;
+  height: 308px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 45px;
+  padding: 0px;
+background: white;
+border-radius: 50px;
+border:2px;
+border-style: solid;
+border-color: black;
+}
+.toutbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box:hover{
+  background: #444;
+}
+
+
+    .boxIn{
+      position: relative;
+        width: 400px;
+        height: 251px;
+        overflow: hidden;
+    }
+    
+    
+.boxIn img{
+
+  padding: 0px;
+  width: 73%;
+  height: 100%;
+  left: 36%;
+
+  
+
+}
+
+
+.prg{
+  width: 250px;
+  display: flex;
+  flex-direction:column;
+  margin-left: 30px;
+  
+}
+.prg h1{
+  font-family: cursive;
+}
+.prg h1:hover{
+  font-size: 35px;
+}
+.prg b{
+  font-family: sans-serif;
+  color: #E73955;
+}
+
+
+.pra{
+  font-size: 20px;
+   font-family: gabriola;
+   position: relative;
+   
+   left: 20%;
+   padding: 0;
+       padding-top: 282px;
+   display: inline-block;
+}
+ .flex-container{
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    position: relative;
+   
+}
+.flex-container::-webkit-scrollbar { 
+          display:none; }
+.flex-item {
+  position: relative;
+    width: 350px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 40%;
+    margin-top: 12%;
+    margin-bottom: 53px;
+    margin-left: -37%;
+    }
+
+footer{
+  width: 100%;
+    height: 377px;
+    background-color: white;
+
+}
+.footer1{
+  width: 100%;
+    height: 277px;
+    background-color: white;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
+
+}
+.footer{
+   display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.line{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+
+  padding-top: 5%;/*
+  padding-right: : 10%;*/
+}
+i{
+  position: absolute;
+  padding-top: 18%;
+}
+span{
+background: red;
+          height: 2px;
+          margin-top:2% ;
+          width: 100%;
+          position: absolute;
+          left: 0;
+        }
+
+
+.line img{
+  position: relative;
+    height: 93px;
+    width: 181px;
+    margin-bottom: 40%;
+    margin-top: -38%;
+   
+
+}
+
+/*
+.line1{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+  padding-top: 1%;
+  padding-right: 10%;
+}*/
+.line1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 21%;
+    padding-top: 2%;
+}
+.line1 b{
+  margin: 0 8%;
+  font-size: 20px;
+  padding: 0;
+
+}
+@media(max-width: 600px){
+  .footer{
+margin-top: 10%;
+display: flex;
+  }
+
+  .line1 b{
+    font-size: 12px;
+  }
+  .line b{
+    font-size: 10px;
+    
+  }
+  .footer i{
+    padding-top: 40%;
+    font-size: 12px;
+  }
+  .line img{
+    width: 70px;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 90px;
+  }
+  span .line b{
+    padding-bottom: 150px;
+  }
+}
+
+
+
+    </style>
+
+
+ 
+</head>
+<body>
+                        <div class="RR">
+                             <div class="banner1">
+                                 <img src="supercar-wallpapers-pagani-4.jpg">
+                          
+                             </div> 
+                       </div>
+
+
+                       <div class="febr">
+                          <h1>Our Cars</h1>
+                      </div>
+
+                      <div class="toutbox">
+                    
+                     <div class="box">
+                         <div class="boxIn">
+                            <img src="Porsche.jfif" >
+                        </div>
+                          <div class="prg">
+                             <center>
+                            <B>Porsche</B>
+                            <p>$170,00/day</p></center>
+                          </div>
+</div>
+
+   <div class="box">
+                         <div class="boxIn">
+                            <img src="lamber.jfif" >
+                        </div>
+                          <div class="prg">
+                             <center>
+                            <B>Lamborghini</B>
+                            <p>$250,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+   
+  
+
+<div class="box">
+                         <div class="boxIn">
+                            <img src="Jaguar.jpg" >
+                        </div>
+                          <div class="prg">
+                             <center>
+                            <B>Jaguar</B>
+                            <p>$220,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+  <div class="box">
+                         <div class="boxIn">
+                            <img src="img1.jpg" >
+                        </div>
+                          <div class="prg">
+                            <center>
+                            <B>Mercedes</B>
+                            <p>$270,00/day</p></center>
+                          </div>
+  </div>
+ </div>
+
+                      <div class="febr">
+                        <h1>Our Moto</h1>
+                      </div>
+                      <div class="toutbox">
+
+<div class="box">
+                         <div class="boxIn">
+                            <img src="moto2.jfif" >
+                        </div>
+                          <div class="prg">
+                             <center>
+                            <B>Neos</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+
+ <div class="box">
+                         <div class="boxIn">
+                            <img src="moto1.jpg" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Hammer</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+  <div class="box">
+                         <div class="boxIn">
+                            <img src="Agility.jpg" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Agility</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+ <div class="box">
+                         <div class="boxIn">
+                            <img src="01-Vespa-Elettrica.jpg" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Vespa</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ </div>
+         <div class="febr">
+                        <h1>Our Trucks</h1>
+                      </div>
+         <div class="toutbox">
+
+<div class="box">
+                         <div class="boxIn">
+                            <img src="yanmar-yt347-tractor.jpg" >
+                        </div>
+                          <div class="prg">
+                             <center>
+                            <B>Tractor</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+
+ <div class="box">
+                         <div class="boxIn">
+                            <img src="Truck-with-Concrete-Mixer-1.jpg" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Cement Mixer</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+  <div class="box">
+                         <div class="boxIn">
+                            <img src="Show_Truck_Front.jpg" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Tanker</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ 
+
+ <div class="box">
+                         <div class="boxIn">
+                            <img src="Rf8a6e45d3459bcef01dcc10fa4e49af8.jfif" >
+                        </div>
+                          <div class="prg"> <center>
+                            <B>Delivrey-Truck</B>
+                            <p>$25,00/day</p></center>
+                          </div>
+  </div>
+ </div>
+
+
+                       <div class="febr">
+                          <h1>New Cars</h1>
+                      </div>
+                    
+    <div class="flex-container">
+         <img class="flex-item" src="car_quotation_testdrive-1c3207a708.png" alt="clio 5 blue">
+         <img class="flex-item" src="download-sports-car-png-2048_1360.png" alt="megan 5 orange">
+         <img class="flex-item" src="R15a75ec51bd3cd1efc8120a20415410b.png" alt="mercedes c220 blue">
+         <img class="flex-item" src="R472884069cfa19739a8061abfcb5b76c.png" alt="g wagon blue">
+         <img class="flex-item" src="PNGPIX-COM-Buick-Avista-Blue-Car-PNG-Image.png" alt="maseratti ghibli blue nuit">
+         <img class="flex-item" src="ferrari_PNG10657.png" alt="suzuki gimni">
+         
+     </div>
+
+
+                 
+                 <div class="menu">
+<img src="AUTOABDA-white.png" class="logo" alt="Logo">
+    <img src="AUTOABDA_black.png" class="logob" alt="Logo">
+    
+       
+
+            <nav>
+                <ul>  
+                 <li> <a href="home.html">Home</a></li>
+                    <li> <a href="gallery.html" style="color:#b32137;">GALLERY</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html" >Contact US</a></li>
+                    
+                              
+                </ul>
+            </nav>
+           
+        
+    </div>
+
+</div>
+
+
+                  <footer>
+            <div class="footer">
+             <div class="line1">
+              <b >Model Overview</b>
+               <b >Model Overview</b>
+               <b >Model Overview</b>
+               </div>
+            <div class="footer1">
+              
+             
+              <span></span>
+              <div class="line">
+               <img src="AUTOABDA_black.png">
+               <!-- <b>FATYcar.com</b> -->
+                
+              </div>
+
+              <div class="line">
+               <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+              
+              </div>
+
+               <div class="line">
+              <b>Electromobility</b>
+                <b>Innovation</b>
+                <b>Design</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+
+               <div class="line">
+                <b>Daimler AG</b>
+                <b>Vulnerability Reporting Policy</b>
+                <b>Customer Centre Sindelfingen</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+             
+              <i>© 2021 FATYcar.com. All rights reserved. FATYcar.com, Inc. is an Expedia Group Company.</i>
+                 
+               
+               
+             
+             </div>
+</div>
+               
+          </footer>       
+
+                 
+    
+            
+</body>
+
+</html>

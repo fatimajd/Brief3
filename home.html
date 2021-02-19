@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <style type="text/css">
+      body{
+ 
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background:black;
+  flex-wrap: wrap;
+  overflow-x: hidden; 
+}
+
+.menu {
+   
+    width: 100%;
+    height: 12%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+box-shadow: 2PX white;
+    transition:all 1s linear;
+}
+
+
+
+  nav ul {
+
+    position: relative;
+    left: 41%;
+    margin: 20px;
+
+    visibility: visible;
+  } 
+
+     nav ul li {
+        
+        display: inline-block;
+        letter-spacing: 1px;
+        margin-right: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        font-family:  sans-serif;
+       text-transform: uppercase;
+       font-weight: 510;
+        
+
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #FFF;
+      padding:  0px  30px;
+      transition:all 1s linear;
+
+  }
+.menu:hover{
+
+  visibility: visible;
+  height: 20%;
+  
+}
+.menu:hover .logo{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+  }
+.menu:hover .logob{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 1;
+  }
+
+.menu:hover nav ul li a {
+      text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+  }
+
+ 
+
+
+
+
+      .banner1,.banner2,.banner3,.banner4 {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+       img{
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+      }
+      .textbox{
+        width: 600px;
+        position: absolute;
+        top: 70%;
+        left: 150px;
+        color: #fff;
+      }
+         .textbox h1{
+           margin-bottom: 40px;
+           font-family: gabriola;
+         }
+         .textbox p{
+          font-size: 14px;
+          line-height: 18px;
+           margin-top: 60px;
+           font-family: sans-serif;
+         }
+         .textbox span{
+          background: red;
+          height: 2px;
+          margin-top: -39px;
+          width: 100px;
+          position: absolute;
+          left: 0;
+         }
+         
+        .banner1 {
+          animation: slide1 7s linear infinite;
+        }
+        .banner2 {
+          animation: slide2 7s linear infinite;
+        }
+        .banner3 {
+          animation: slide3 7s linear infinite;
+        }
+        .banner4 {
+          animation: slide4 7s linear infinite;
+        }
+
+
+        @keyframes slide1{
+          0%{
+            visibility: visible;
+          }
+          25%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+          75%{
+            visibility: hidden;
+          }
+          100%{
+            visibility: visible;
+          }
+        }
+        @keyframes slide2{
+          0%{
+            visibility: hidden;
+          }
+          25%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: visible;
+          }
+          75%{
+            visibility: hidden;
+          }
+          100%{
+            visibility: hidden;
+          }
+        }
+        @keyframes slide3{
+          0%{
+            visibility: hidden;
+          }
+          25%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+          75%{
+            visibility: visible;
+          }
+          100%{
+            visibility: hidden;
+          }
+        }
+        @keyframes slide4{
+          0%{
+            visibility: hidden;
+          }
+          25%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+          75%{
+            visibility: hidden;
+          }
+          100%{
+            visibility: visible;
+          }
+        }
+        .logo{
+
+    padding-right: 83%;
+    padding-top: 1px;
+    /*height: 50%;
+    width: 10%;*/
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+  .logob{
+    padding-right: 83%;
+    padding-top: 1px;
+    opacity: 0;
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+h2{
+  padding-top: 60%;
+  font-family: gabriola;
+  color: #F6DA01;
+  font-size: 40px;
+  
+}
+h4{
+  font-family: sans-serif;
+  color: white;
+  align-items: center;
+  width: 600px;
+  
+}
+.imgcar{
+ width: 70%;
+height: 50%;
+}
+
+footer{
+  width: 100%;
+    height: 377px;
+    background-color: white;
+}
+.footer1{
+  width: 100%;
+    height: 277px;
+    background-color: white;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
+}
+.footer{
+   display: flex;
+    flex-direction: column;
+}
+
+.line{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+
+  padding-top: 5%;/*
+  padding-right: : 10%;*/
+}
+i{
+  position: absolute;
+  padding-top: 18%;
+}
+span{
+background: red;
+          height: 2px;
+          margin-top:2% ;
+          width: 100%;
+          position: absolute;
+          left: 0;
+        }
+
+
+.line img{
+  position: relative;
+    height: 93px;
+    width: 181px;
+    margin-bottom: 40%;
+    margin-top: -38%;
+   
+
+}
+
+/*
+.line1{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+  padding-top: 1%;
+  padding-right: 10%;
+}*/
+.line1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 21%;
+    padding-top: 2%;
+}
+.line1 b{
+  margin: 0 8%;
+  font-size: 20px;
+  padding: 0;
+
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+  <div class="RR">
+    
+                  <div class="banner1">
+                      <img src="autoo.png">
+                          <div class="textbox">
+                              <h1>MARTINA CARS MISSION</h1>
+                                  <span></span>
+                              <p>Our mission is to provide satisfaction and comfort to the Client who hires a car from us. Quickly, hassle-free and with top quality – hiring a car from our car rental takes only several minutes. Safely, trouble-free and to the point. Just one click and the car is on its way to the Client.</p>
+                         </div>
+                 </div>
+               <div class="banner2">
+                      <img src="autoo1.png">
+                          <div class="textbox">
+                              <h1>OUR FLEET</h1>
+                                  <span></span>
+                              <p>We rent cars that we ourselves want to drive. We offer reliable, luxury brands in comfortable, safe and proven models. Audi, Mercedes, BMW, Volkswagen, Volvo, Skoda – the car portfolio that we rent is limited to the best – it is about trust and quality.</p>
+                         </div>
+                 </div>
+               <div class="banner3">
+                      <img src="autoo5.png">
+                          <div class="textbox">
+                              <h1>WHERE TO FIND US?</h1>
+                                  <span></span>
+                              <p>Our car rental is located in Warsaw Żoliborz. You can visit Martina Cars salon in person or you can contact us – we offer car booking through our website and the cars are delivered directly to the Client.</p>
+                         </div>
+                 </div>
+                <div class="banner4">
+                      <img src="autoo4.png">
+                         <div class="textbox">
+                              <h1>WE RENT THE PREMIUM CLASS CARS</h1>
+                                  <span></span>
+                              <p>Our company provides comprehensive services for the hire of premium class cars. We provide a wide selection of comfortable, elegant cars and top-quality service for private, business and foreign Clients. Car hire at Martina Cars is simple, quick and convenient. See our offer for more details.</p>
+                         </div>
+                 </div>
+                 <div class="menu">
+
+        <img src="AUTOABDA-white.png" class="logo" alt="Logo">
+    <img src="AUTOABDA_black.png" class="logob" alt="Logo">
+    
+       
+
+            <nav>
+                <ul>  
+                 <li> <a href="home.html" style="color:#b32137;">Home</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html">Contact US</a></li>
+                    
+                              
+                </ul>
+            </nav>
+           
+        
+    </div>
+
+
+<center>
+  <h2>CAR RENTAL WARSAW</h2>
+
+<h4>We are a premium class car rental in Warsaw. We offer comfortable, safe and fast top class cars. We invite private persons, companies and foreign guests. Our service is as elegant as our cars are.
+
+We guarantee fast car rental service in Warsaw – 5 minutes and the car is on its way to the client!</h4>
+</center>
+
+<div class="imgcar">
+  <img src="cars_img-965x299-2-965x299.png" style="  position :relative;width: 80%;
+height: 60%; padding-top: 50%; padding-left:50%">
+</div>
+          <footer>
+            <div class="footer">
+             <div class="line1">
+              <b >Model Overview</b>
+               <b >Model Overview</b>
+               <b >Model Overview</b>
+               </div>
+            <div class="footer1">
+              
+             
+              <span></span>
+              <div class="line">
+               <img src="AUTOABDA_black.png">
+               <b>FATYcar.com</b>
+                
+              </div>
+
+              <div class="line">
+               <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+              
+              </div>
+
+               <div class="line">
+              <b>Electromobility</b>
+                <b>Innovation</b>
+                <b>Design</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+
+               <div class="line">
+                <b>Daimler AG</b>
+                <b>Vulnerability Reporting Policy</b>
+                <b>Customer Centre Sindelfingen</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+             
+              <i>© 2021 FATYcar.com. All rights reserved. FATYcar.com, Inc. is an Expedia Group Company.</i>
+                 
+               
+               
+             
+             </div>
+</div>
+               
+          </footer>       
+</body>
+</html>

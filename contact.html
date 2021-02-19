@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+      body{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+  flex-wrap: wrap;
+  overflow-x: hidden; 
+  background-color: black;
+}
+
+.menu {
+   
+    width: 100%;
+    height: 12%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+box-shadow: 2PX white;
+    transition:all 1s linear;
+}
+.menu:hover{
+
+  visibility: visible;
+  height: 20%;
+  
+}
+
+.menu:hover .logo{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+  }
+  .menu:hover .logob{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 1;
+  }
+
+.menu:hover nav ul li a {
+      text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+  }
+
+
+nav ul {
+    position: relative;
+    left: 40%;
+    margin: 20px;
+    visibility: visible;
+} 
+nav ul li {
+        
+        display: inline-block;
+        letter-spacing: 1px;
+        margin-right: 10px;
+        margin-left: 15px;
+        font-size: 15px;
+        font-family:  sans-serif;
+       text-transform: uppercase;
+       font-weight: 510;
+
+    }
+  
+    nav ul li a {
+      text-decoration: none;
+      color: #FFF;
+      padding:  0px  30px;
+      transition:all 1s linear;
+  }
+ 
+
+
+
+
+      .banner1
+       {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      img{
+        width: 120%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+      }
+      .textbox{
+        width: 300px;
+        position: absolute;
+        top: 60%;
+        left: 150px;
+        color: #fff;
+      }
+         .textbox h4{
+          font-size: 40px;
+          font-family: gabriola;
+           margin-bottom: 40px;
+         }
+         .textbox p{
+          font-size: 14px;
+          line-height: 18px;
+           margin-top: 50px;
+          width: 800px;
+          font-family: sans-serif;
+         }
+         .textbox span{
+          background: red;
+          height: 2px;
+          width: 100px;
+          margin-top: -39px;
+          position: absolute;
+          left: 0;
+         }
+         
+        
+         .logo{
+
+    padding-right: 83%;
+    padding-top: 1px;
+    /*height: 50%;
+    width: 10%;*/
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+  .logob{
+    padding-right: 83%;
+    padding-top: 1px;
+    opacity: 0;
+    height: 50px;
+    width: 100px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+
+.img1{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 75%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        visibility: visible;
+}
+.img2{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 62%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        
+}
+.img3{
+  width: 30%;
+        height: 40%;
+        position: absolute;
+        left: 49%;
+        top:  50%;
+        transform: translate(-50%,-50%);
+        
+}
+.img1{
+  animation: img1 1s ease ;
+}
+.img2{
+  animation: img2 2s ease;
+}
+.img3{
+  animation: img3 3s ease;
+}
+
+        @keyframes img1{
+          0%{
+             left: 62%;
+          }
+          50%{
+            left: 62%;
+          }
+           100%{
+            left: 75%;
+          }
+        }
+
+        @keyframes img2{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+          }
+        }
+
+         @keyframes img3{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+          }
+        }
+        .h1{
+          text-align: center;
+          padding-top: 0%;
+          font-family: gabriola;
+          font-size: 40px;
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 1px 1px 2px #DFD1D1, 0 0 25px red;
+          letter-spacing: 20px;
+}
+.h1{
+   animation: h1 1s ease ;
+}
+
+
+ @keyframes h1{
+          0%{
+            
+            visibility: hidden;
+          }
+          50%{
+           text-shadow: 0 0 3px red, 0 0 5px red;
+           visibility: visible;
+          
+           letter-spacing: 10px;
+          }
+           100%{
+            text-shadow: 1px 1px 2px #DFD1D1, 0 0 25px #DFD1D1;
+            letter-spacing: 20px;
+            
+           visibility: visible;
+          }
+        }
+
+#wrapper {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #DFD1D1;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 4px;
+  padding-right: 72px;
+}
+
+
+
+
+form {
+  margin: -17px  auto;
+}
+.textInput {
+  border: none;
+  height: 53px;
+  margin: 24px;
+  margin-left: 170px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.4s linear;
+}
+.tx {
+  border: none;
+ 
+  margin: 24px;
+  margin-left: 170px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1.2em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.4s linear;
+}
+.textInput:focus {
+  margin-left: 140px;
+  outline: none;
+   width: 78%;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+.tx:focus {
+ margin-left: 140px;
+   width: 78%;
+  outline: none;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+.btn {
+  cursor: pointer;
+  width: 25%;
+  border: none;
+  margin-top: 2px;
+  color: white;
+  background-color: #111;
+  border-radius: 20px;
+  padding: 12px;
+  margin-left: 400px;
+
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+}
+.btn:focus {
+
+   width: 25%;
+  outline: none;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+#wrapper{
+  animation: wrapper 5s ease ;
+ }
+
+ @keyframes wrapper{
+          0%{
+            visibility: hidden;
+          }
+          50%{
+            visibility: hidden;
+          }
+           100%{
+            visibility: visible;
+}}
+
+
+
+
+.pra{
+  font-size: 20px;
+   font-family: gabriola;
+   position: relative;
+   
+   left: 20%;
+   padding: 0;
+       padding-top: 282px;
+   display: inline-block;
+}
+.spaan span{
+    background: red;
+    height: 2px;
+    width: 550px;
+    position: absolute;
+    left: 33%;
+   margin-top: 12%;
+         }
+
+         footer{
+  width: 100%;
+    height: 377px;
+    background-color: white;
+    margin-top: 30%;
+}
+.footer1{
+  width: 100%;
+    height: 277px;
+    background-color: white;
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-content: center;
+}
+.footer{
+   display: flex;
+    flex-direction: column;
+}
+
+.line{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+
+  padding-top: 5%;/*
+  padding-right: : 10%;*/
+}
+h3{
+  position: absolute;
+  padding-top: 18%;
+}
+span{
+background: red;
+          height: 2px;
+          margin-top:2% ;
+          width: 100%;
+          position: absolute;
+          left: 0;
+        }
+
+
+.line img{
+  position: relative;
+    height: 93px;
+    width: 181px;
+    margin-bottom: 40%;
+    margin-top: -38%;
+   
+
+}
+
+/*
+.line1{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+  padding-top: 1%;
+  padding-right: 10%;
+}*/
+.line1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin-left: 21%;
+    padding-top: 2%;
+}
+.line1 b{
+  margin: 0 8%;
+  font-size: 20px;
+  padding: 0;
+
+}
+
+
+
+
+    </style>
+
+
+ 
+</head>
+<body>
+  <div class="RR">
+    
+                  <div class="banner1">
+                      <img src="white-clouds-png-15.png">
+                          <div class="textbox">
+                              <h4>WHERE TO FIND US?</h4>
+                                  <span></span>
+                              <p>Our car rental is located in Warsaw Żoliborz. You can visit Martina Cars salon in person or you can contact us – we offer car booking through our website and the cars are delivered directly to the Client.</p>
+                         </div>
+                 </div>
+
+            <div class="img3">
+                 <img src="movil-gol.png">
+               </div>
+                 <div class="img2">
+                 <img src="vw-amarok-png-6-png-image-volkswagen-amarok-png-864_576.png"></div>
+                    <div class="img1">
+                 <img src="movil-audi1.png"></div>
+
+
+                 
+                 <div class="menu">
+<img src="AUTOABDA-white.png" class="logo" alt="Logo">
+    <img src="AUTOABDA_black.png" class="logob" alt="Logo">
+    
+       
+
+            <nav>
+                <ul>  
+                 <li> <a href="home.html">Home</a></li>
+                    <li> <a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="contact.html" style="color:#b32137;">Contact US</a></li>
+                    
+                              
+                </ul>
+            </nav>
+           
+        
+    </div>
+
+</div>
+<div class="h1">
+                          <p>CONTACT US</p>
+                     </div>
+ <div id="wrapper">
+   <form method="POST"   name="vform" >
+    <div id="username_div">
+      
+      <input type="text" name="username" id="name" class="textInput" placeholder="Name">
+      <div id="name_error"></div>
+    </div>
+
+
+    <div id="email_div">
+       
+      <input type="email" name="email" class="textInput" placeholder="Email">
+      <div id="email_error"></div>
+    </div>
+
+
+    <div id="subject_div">
+      
+      <input type="text" name="subject" class="textInput" placeholder="Subject">
+      <div id="subject_error"></div>
+    </div>
+
+    <div id="message_div">
+       
+       <textarea type="textarea" name="message" rows="10" cols="70" class="tx" placeholder="Massage"></textarea>
+       <div id="message_error"></div>
+    </div>
+
+    <div>
+    <input type="button" name="Send" value="Send" onclick="Validate()" class="btn">
+    </div>
+   </form>
+  </div>
+    <div class="spaan">         
+<span></span></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.3339111376101!2d-9.234811842132505!3d32.29390770151528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e0!3m2!1sen!2sma!4v1613388410760!5m2!1sen!2sma" width="600" height="450" frameborder="2px" style="border:0;padding-top:200px ;padding-left:46.5%;border-radius: 50px;" allowfullscreen="" aria-hidden="false" tabindex="0" id="iframe"></iframe>
+
+
+
+   <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;padding-right: 48.5%;margin-top:-24%;"><i class="fas fa-map-marked"></i> FATYcar</p>
+
+
+      <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;
+      padding-right: 48.5%;"><i class="fas fa-address-book"></i> +8801234567891</p>
+
+
+      <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;
+      padding-right: 48.5%;"><i class="fas fa-envelope"></i> contact@FATYcar.com</p>
+
+<footer>
+            <div class="footer">
+             <div class="line1">
+              <b >Model Overview</b>
+               <b >Model Overview</b>
+               <b >Model Overview</b>
+               </div>
+            <div class="footer1">
+              
+             
+              <span></span>
+              <div class="line">
+               <img src="AUTOABDA_black.png">
+               <b>FATYcar.com</b>
+                
+              </div>
+
+              <div class="line">
+               <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+              
+              </div>
+
+               <div class="line">
+              <b>Electromobility</b>
+                <b>Innovation</b>
+                <b>Design</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+
+               <div class="line">
+                <b>Daimler AG</b>
+                <b>Vulnerability Reporting Policy</b>
+                <b>Customer Centre Sindelfingen</b>
+                <b>Model Overview</b>
+                <b>Configurator</b>
+                <b>Test Drive</b>
+                
+              </div>
+             
+              <h3>© 2021 FATYcar.com. All rights reserved. FATYcar.com, Inc. is an Expedia Group Company.</h3>
+                 
+               
+               
+             
+             </div>
+</div>
+               
+          </footer>     
+
+                 
+    
+    <script type="text/javascript">
+  
+
+var username = document.forms['vform']['username'];
+var email = document.forms['vform']['email'];
+var subject = document.forms['vform']['subject'];
+var message = document.forms['vform']['message'];
+// SELECTING ALL ERROR DISPLAY ELEMENTS
+var name_error = document.getElementById('name_error');
+var email_error = document.getElementById('email_error');
+var subject_error = document.getElementById('subject_error');
+var message_error = document.getElementById('message_error');
+// SETTING ALL EVENT LISTENERS
+username.addEventListener('blur', nameVerify, true);
+email.addEventListener('blur', emailVerify, true);
+subject.addEventListener('blur', subjectVerify, true);
+message.addEventListener('blur', messageVerify, true);
+// validation function
+function Validate() {
+  var v = 1;
+  // validate username
+  if (username.value == "") {
+    
+    document.getElementById('username_div').style.color = "red";
+    name_error.textContent = "Username is required";
+    username.style.border = "3px solid red";
+    username.focus();
+    return false;
+  }
+  // validate username
+  if (username.value.length < 3) {
+    username.style.border ="1px solid red";
+    document.getElementById('username_div').style.color = "red";
+    name_error.textContent = "Username must be at least 3 characters";
+    username.style.border = "3px solid red";
+    username.focus();
+   return false;
+  }
+  else{
+     var name=username.value;
+     
+  }
+  // validate email
+  if (email.value == "") {
+    email.style.border = "1px solid red";
+    document.getElementById('email_div').style.color = "red";
+    email_error.textContent = "Email is required";
+    email.style.border = "3px solid red";
+    email.focus();
+    return false;
+  }
+  if(email.value.indexOf('@') == -1) { 
+    email.style.border = "1px solid red";
+    document.getElementById('email_div').style.color = "red";
+    email_error.textContent = "Email not valide";
+    email.style.border = "3px solid red";
+    email.focus();
+    return false;
+     }
+     else{
+     var gmail=email.value;
+     
+    
+  }
+
+  // validate subject
+  if (subject.value == "") {
+    subject.style.border = "1px solid red";
+    document.getElementById('subject_div').style.color = "red";
+    subject_error.textContent = "Subject is required";
+
+    subject.style.border = "3px solid red";
+    subject.focus();
+    return false;
+  }
+  else{
+     var su=subject.value;
+
+    
+    
+  }
+  
+  if (message.value == "") {
+    message.style.border = "1px solid red";
+    document.getElementById('message_div').style.color = "red";
+    message_error.textContent = "message is required";
+
+    message.style.border = "3px solid red";
+    message.focus();
+    return false;
+  }
+    if (message.value.length < 250 ) {
+    message.style.border = "1px solid red";
+    document.getElementById('message_div').style.color = "red";
+    message_error.textContent = "Message must be at least 250 characters";
+
+    message.style.border = "3px solid red";
+    message.focus();
+    return false;
+  }else{
+     var mes=message.value;
+  
+    
+  }
+
+  
+  
+  alert('name:'+name+'\n Email:'+gmail+'\n Sujet:'+su+'\n Message'+mes+'\n');
+}
+// event handler functions
+function nameVerify() {
+  if (username.value != "") {
+   username.style.border = "3px solid green";
+   name_error.innerHTML = "";
+   return true;
+  }
+}
+function emailVerify() {
+  if (email.value != "") {
+    email.style.border = "3px solid green";
+    email_error.innerHTML = "";
+    return true;
+  }
+}
+function subjectVerify() {
+  if (subject.value != "") {
+    subject.style.border = "3px solid green";
+    subject_error.innerHTML = "";
+    return true;
+  }
+}
+function messageVerify() {
+  if (message.value != "") {
+    message.style.border = "3px solid green";
+    message_error.innerHTML = "";
+    return true;
+  }
+
+}
+
+</script>             
+</body>
+
+</html>
