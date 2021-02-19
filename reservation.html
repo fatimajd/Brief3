@@ -186,6 +186,7 @@ position: relative;
 }
 
 
+
 .febr{
   font-family: sans-serif;
   margin-left: 38%;
@@ -207,6 +208,7 @@ border-style: solid;
 border-color: black;
 }
 
+
 .boxi{
 
   width: 280px;
@@ -215,13 +217,20 @@ border-color: black;
    overflow: hidden;
   margin: 45px;
   padding: 0px;
-  margin-left: 9%;
 background: white;
 border-radius: 50px;
 border:2px;
 border-style: solid;
 border-color: black;
 }
+.toutbox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .box:hover{
   background: #444;
 }
@@ -261,7 +270,7 @@ border-color: black;
   display: flex;
   flex-direction: row;
    background: #ff4646;
-   justify-content: space-between;
+   justify-content: space-around;
     align-content: center;
   height:  50px;
    width: 70%;
@@ -269,11 +278,9 @@ border-color: black;
   font-family: gabriola;
   font-size: 20px;
   padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 20px;
-  margin-right: 30px;
   margin-top: 54px;
+  border-radius: 20px;
+
 
 }
 
@@ -281,7 +288,7 @@ border-color: black;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     position: relative;
    background: #ff4646;
@@ -343,7 +350,6 @@ footer{
 .footer1{
   width: 100%;
     height: 277px;
-    background-color: white;
     margin-bottom: 0%;
     display: flex;
     flex-direction: row;
@@ -399,7 +405,6 @@ background: red;
   padding-right: 10%;
 }*/
 .line1{
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -414,11 +419,130 @@ background: red;
 
 }
 
+@media(max-width: 600px){
+  .footer{
+margin-top: 10%;
+display: flex;
+  }
+
+  .line1 b{
+    font-size: 12px;
+  }
+  .line b{
+    font-size: 10px;
+    
+  }
+  .footer i{
+    padding-top: 40%;
+    font-size: 12px;
+  }
+  .line img{
+    width: 70px;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 90px;
+  }
+  span .line i{
+    padding-bottom: 150px;
+  }
+  .line {
+    width: 84%;
+  }
+  
+}
+/*triangle*/
 
 
 
 
 
+
+@media(max-width: 600px){
+  .tria{
+height:378px;
+ top: 10%;
+  }
+  .imgbook{
+height:378px;
+ top: -84.5%;
+ background-size: cover;
+  }
+
+}
+
+
+@media(max-width: 600px){
+.carburant{
+   display: flex;
+  flex-direction: row;
+   background: #ff4646;
+   justify-content: space-around;
+    align-content: center;
+  height:  40px;
+   width: 70%;
+  color: white;
+  font-family: gabriola;
+  font-size: 10px;
+  padding-top: 12px;
+  margin-top: 54px;
+  border-radius: 20px;
+
+
+}
+
+.boitevitesse{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+   background: #ff4646;
+  height:  40px;
+   width: 40%;
+   left: 9px;
+  color: white;
+  border-radius: 20px;
+  font-family: gabriola;
+  font-size: 10px;
+  padding-top: 3px;
+
+ 
+  margin-top: 54px;
+
+}
+.duree{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+     margin-top: 50px;
+
+
+}
+input[type="number"]{
+  width: 100px;
+   height: 20px;
+  border:2px solid #ff4646;
+  border-radius: 20px;
+}
+.button{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+input[type="button"]{
+  background: #ff4646;
+  border-radius: 20px;
+  margin-top: 30px;
+   width: 70px;
+    outline: none;
+   height: 40px;
+}
+}
 
     </style>
 
@@ -436,6 +560,7 @@ background: red;
              <div class="febr">
                      <h1>online booking</h1>
             </div>
+             <div class="toutbox">
 
                    <div class="box">
                      <div class="boxIn">
@@ -478,7 +603,8 @@ background: red;
                                 
                         </div>
                   </div>
-
+                </div>
+ <div class="toutbox">
                   <div class="boxi">
                      <div class="boxIn">
                         <img src="location-berline-aald-72.jpg" onclick="Berline()" >
@@ -515,7 +641,7 @@ background: red;
                   </div>
 
 
-
+</div>
 
 
 
@@ -568,7 +694,7 @@ background: red;
                                  <div class="duree">
                                    <input type="number" name="duree" min="1" max="30" id="numberj">
                                  </div>
-                                 <label id="pr"></label>
+                                 <label id="pr"> Total price :</label>
                                  <div class="button">
                                    <input type="button" name="button" value="submit"  onclick="calculeprix()">
                                  </div>
@@ -623,7 +749,7 @@ background: red;
               <span></span>
               <div class="line">
                <img src="AUTOABDA_black.png">
-               <b>FATYcar.com</b>
+              
                 
               </div>
 
@@ -831,7 +957,7 @@ if(prix==0){
   if(bv_value!=-1)
     boitevitesse=tabv[bv_value];
     var prixtotale= (prix+carburant*100/prix  + boitevitesse*100/prix)*numberj;
-    document.getElementById("pr").innerHTML=prixtotale;
+    document.getElementById("pr").innerHTML+=prixtotale;
 }
 
 

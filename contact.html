@@ -262,10 +262,11 @@ nav ul li {
   background: white;
   border-radius: 20px;
   box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #DFD1D1;
-  margin-left: 5%;
+ 
+  width: 50%;
+  margin-left: 23%;
   margin-right: 5%;
-  padding-left: 4px;
-  padding-right: 72px;
+  padding-left: 2%;
 }
 
 
@@ -276,9 +277,9 @@ form {
 }
 .textInput {
   border: none;
-  height: 53px;
+  height: 30px;
   margin: 24px;
-  margin-left: 170px;
+  margin-left: 100px;
   box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
   border-radius: 20px;
   font-size: 1.2em;
@@ -290,7 +291,7 @@ form {
   border: none;
  
   margin: 24px;
-  margin-left: 170px;
+  margin-left: 100px;
   box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
   border-radius: 20px;
   font-size: 1.2em;
@@ -321,7 +322,7 @@ form {
   background-color: #111;
   border-radius: 20px;
   padding: 12px;
-  margin-left: 400px;
+  margin-left: 35%;
 
   box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
 }
@@ -366,8 +367,23 @@ form {
     width: 550px;
     position: absolute;
     left: 33%;
-   margin-top: 12%;
+   margin-top: 10%;
          }
+         #iframe{
+          border:0;
+          padding-top:200px;
+          padding-left:46.5%;
+          border-radius:50px;
+         }
+.faic{
+font-family: Montserrat;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding-right: 48.5%;
+    margin-top: -25%;
+}
+
 
          footer{
   width: 100%;
@@ -422,18 +438,8 @@ background: red;
 
 }
 
-/*
-.line1{
-  display: flex;
-    flex-direction: column;
-    align-content: center;
-    position: relative;
 
-  padding-top: 1%;
-  padding-right: 10%;
-}*/
 .line1{
-    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -448,9 +454,135 @@ background: red;
 
 }
 
+@media(max-width: 600px){
+  .footer{
+margin-top: 10%;
+display: flex;
+  }
+
+  .line1 b{
+    font-size: 12px;
+  }
+  .line b{
+    font-size: 10px;
+    
+  }
+  .footer h3{
+    padding-top: 40%;
+    font-size: 12px;
+  }
+  .line img{
+    width: 70px;
+    height: 70px;
+    padding-top: 0px;
+    padding-bottom: 90px;
+  }
+  span .line b{
+    padding-bottom: 150px;
+  }
+}
+@media(max-width: 600px){
+
+.textbox{
+        width: 300px;
+        position: absolute;
+        top: 70%;
+        left: 50px;
+        color: #fff;
+      }
+         .textbox h4{
+          font-size: 30px;
+          font-family: gabriola;
+           margin-bottom: 40px;
+         }
+         .textbox p{
+          font-size: 10px;
+          line-height: 18px;
+           margin-top: 50px;
+          width: 400px;
+          font-family: sans-serif;
+         }
+}
 
 
+@media(max-width: 600px){
 
+#wrapper {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #DFD1D1;
+ 
+  width: 50%;
+ 
+}
+.textInput {
+  border: none;
+  height: 30px;
+  margin: 24px;
+  margin-left: 40px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.9s linear;
+}
+.textInput:focus {
+  margin-left: 30px;
+  outline: none;
+   width: 78%;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+.tx {
+  border: none;
+ 
+  margin: 24px;
+  margin-left: 40px;
+  box-shadow: 1px 1px 22px #DFD1D1, 0 0 25px #111;
+  border-radius: 20px;
+  font-size: 1em;
+  padding: 5px;
+  width: 68%;
+  transition:all 0.4s linear;
+}
+.tx:focus {
+ margin-left: 30px;
+   width: 78%;
+  outline: none;
+    border: none;
+       box-shadow: 1px 1px 22px black, 0 0 25px red;
+}
+
+}
+@media(max-width: 600px){
+  .spaan span{
+    background: red;
+    height: 2px;
+    width: 350px;
+    position: absolute;
+    left: 17%;
+   margin-top: 20%;
+         }
+ #iframe{
+          border:0;
+          padding-top:200px;
+          padding-left:23%;
+          border-radius:50px;
+          width: 50%;
+          height: 50%
+         }
+
+.faic{
+font-family: Montserrat;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding-right: 10.5%;
+    margin-top: 17%;
+}
+
+}
     </style>
 
 
@@ -526,7 +658,7 @@ background: red;
 
     <div id="message_div">
        
-       <textarea type="textarea" name="message" rows="10" cols="70" class="tx" placeholder="Massage"></textarea>
+       <textarea type="textarea" name="message" rows="10" cols="70" class="tx" placeholder="Message"></textarea>
        <div id="message_error"></div>
     </div>
 
@@ -537,19 +669,18 @@ background: red;
   </div>
     <div class="spaan">         
 <span></span></div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.3339111376101!2d-9.234811842132505!3d32.29390770151528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e0!3m2!1sen!2sma!4v1613388410760!5m2!1sen!2sma" width="600" height="450" frameborder="2px" style="border:0;padding-top:200px ;padding-left:46.5%;border-radius: 50px;" allowfullscreen="" aria-hidden="false" tabindex="0" id="iframe"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1686.3339111376101!2d-9.234811842132505!3d32.29390770151528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac211719897669%3A0x6f59fa5bb517f58a!2sYoucode%20Safi!5e0!3m2!1sen!2sma!4v1613388410760!5m2!1sen!2sma" width="600" height="450" frameborder="2px" allowfullscreen="" aria-hidden="false" tabindex="0" id="iframe"></iframe>
+
+<div class="faic">
+
+   <p><i class="fas fa-map-marked"></i> FATYcar</p>
 
 
-
-   <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;padding-right: 48.5%;margin-top:-24%;"><i class="fas fa-map-marked"></i> FATYcar</p>
-
-
-      <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;
-      padding-right: 48.5%;"><i class="fas fa-address-book"></i> +8801234567891</p>
+      <p><i class="fas fa-address-book"></i> +8801234567891</p>
 
 
-      <p style="font-family: Montserrat; text-align: center;color: white; font-size: 45px;
-      padding-right: 48.5%;"><i class="fas fa-envelope"></i> contact@FATYcar.com</p>
+      <p><i class="fas fa-envelope"></i> contact@FATYcar.com</p>
+      </div>
 
 <footer>
             <div class="footer">
@@ -564,7 +695,7 @@ background: red;
               <span></span>
               <div class="line">
                <img src="AUTOABDA_black.png">
-               <b>FATYcar.com</b>
+               
                 
               </div>
 
