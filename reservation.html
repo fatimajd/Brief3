@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+    <title>Reservation</title>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style type="text/css">
@@ -65,6 +66,13 @@ box-shadow: 2PX white;
     visibility: visible;
   } 
 
+@media screen and (max-width: 1000px){
+ nav ul {
+    left: 26%;
+
+  
+}
+ }
      nav ul li {
         
         display: inline-block;
@@ -98,7 +106,7 @@ box-shadow: 2PX white;
         left: 0;
       }
       img{
-        width: 120%;
+        width: 100%;
         height: 100%;
         position: absolute;
         left: 50%;
@@ -106,7 +114,14 @@ box-shadow: 2PX white;
         transform: translate(-50%,-50%);
       }
 
-         
+      @media screen and (max-width: 1000px){
+ img{
+    height: 73%;
+    top: 44%;
+
+  
+}
+ }   
         
          .logo{
 
@@ -170,8 +185,8 @@ box-shadow: 2PX white;
 }
 
 .imgbook{
-background-image: url('nsu-10.jpg');
-background-size: cover;
+background-image: url('images/carrent.png');
+  background-size: 100% 100%;
 background-position: right;
 position: relative;
   left: 50%;
@@ -249,9 +264,12 @@ border-color: black;
 .boxIn img{
 
   padding: 0px;
-  width: 90%;
+  width: 100%;
   height: 100%;
-  left: 36%;
+  left: 40%;
+  right: auto;
+  padding: auto;
+  margin:auto;
 
   
 
@@ -471,6 +489,90 @@ height:378px;
 }
 
 
+@media screen and (max-width: 1000px){
+  .tria{
+height:378px;
+ top: 10%;
+  }
+  .imgbook{
+height:378px;
+ top: -84.5%;
+  }
+
+.carburant{
+   display: flex;
+  flex-direction: row;
+   background: #ff4646;
+   justify-content: space-around;
+    align-content: center;
+  height:  50px;
+   width: 80%;
+  color: white;
+  font-family: gabriola;
+  font-size: 12px;
+  padding-top: 12px;
+  margin-top: 34px;
+  border-radius: 20px;
+
+
+}
+
+.boitevitesse{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    position: relative;
+   background: #ff4646;
+  height:  50px;
+   width: 50%;
+   left: 9px;
+  color: white;
+  border-radius: 20px;
+  font-family: gabriola;
+  font-size: 12px;
+
+  padding-top: 13px;
+
+ 
+  margin-top: 34px;
+
+}
+.duree{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+     margin-top: 32px;
+
+
+}
+input[type="number"]{
+  width: 100px;
+   height: 30px;
+  border:2px solid #ff4646;
+  border-radius: 20px;
+  font-size: 10px;
+}
+.button{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+input[type="button"]{
+  background: #ff4646;
+  border-radius: 20px;
+  margin-top: 20px;
+   width: 90px;
+    outline: none;
+   height: 50px;
+}
+}
+
 @media(max-width: 600px){
 .carburant{
    display: flex;
@@ -553,7 +655,7 @@ input[type="button"]{
   <div class="RR">
     
                   <div class="banner1">
-                      <img src="carrr.jpeg">
+                      <img src="images/carrr.jpeg">
                  </div>
             </div>
              
@@ -564,7 +666,7 @@ input[type="button"]{
 
                    <div class="box">
                      <div class="boxIn">
-                        <img src="nsu-10.jpg" onclick="Moto()" >
+                        <img src="images/nsu-10.jpg" onclick="Moto()" >
                       </div>
                          <div class="prg">
                                <h4>Moto</h4>
@@ -574,7 +676,7 @@ input[type="button"]{
 
                   <div class="box">
                      <div class="boxIn">
-                        <img src="car_quotation_testdrive-1c3207a708.png"  onclick="Compact()">
+                        <img src="images/car_quotation_testdrive-1c3207a708.png"  onclick="Compact()">
                       </div>
                          <div class="prg">
                                <h4>Compact</h4>
@@ -585,7 +687,7 @@ input[type="button"]{
 
                   <div class="box">
                      <div class="boxIn">
-                        <img src="OIP.jfif" onclick="Citadin()">
+                        <img src="images/OIP.jfif" onclick="Citadin()">
                       </div>
                          <div class="prg">
                                <h4>Citadin</h4>
@@ -596,7 +698,7 @@ input[type="button"]{
 
                   <div class="box">
                      <div class="boxIn">
-                        <img src="7d955da414a9d1de381bcbaff5bdd033.png" onclick="Utilitaire()">
+                        <img src="images/7d955da414a9d1de381bcbaff5bdd033.png" onclick="Utilitaire()">
                       </div>
                          <div class="prg">
                                <h4>Utilitaire</h4>
@@ -607,7 +709,7 @@ input[type="button"]{
  <div class="toutbox">
                   <div class="boxi">
                      <div class="boxIn">
-                        <img src="location-berline-aald-72.jpg" onclick="Berline()" >
+                        <img src="images/location-berline-aald-72.jpg" onclick="Berline()" >
                       </div>
                          <div class="prg">
                                <h4>Berline</h4>
@@ -619,7 +721,7 @@ input[type="button"]{
 
                   <div class="boxi">
                      <div class="boxIn">
-                        <img src="Ra57548c09c7e5da263db209b3ddd8161.jfif"onclick="EngindeChantier()" >
+                        <img src="images/Ra57548c09c7e5da263db209b3ddd8161.jfif"onclick="EngindeChantier()" >
                       </div>
                          <div class="prg">
                                <h4>Engin de Chantier</h4>
@@ -632,7 +734,7 @@ input[type="button"]{
 
                   <div class="boxi">
                      <div class="boxIn">
-                        <img src="7552_540553504.jpg" onclick="Camion()">
+                        <img src="images/7552_540553504.jpg" onclick="Camion()">
                       </div>
                          <div class="prg">
                                <h4>Camion</h4>
@@ -713,8 +815,8 @@ input[type="button"]{
 
 
                  <div class="menu">
-<img src="AUTOABDA-white.png" class="logo" alt="Logo">
-    <img src="AUTOABDA_black.png" class="logob" alt="Logo">
+<img src="images/AUTOABDA-white.png" class="logo" alt="Logo">
+    <img src="images/AUTOABDA_black.png" class="logob" alt="Logo">
     
        
 
@@ -748,7 +850,7 @@ input[type="button"]{
              
               <span></span>
               <div class="line">
-               <img src="AUTOABDA_black.png">
+               <img src="images/AUTOABDA_black.png">
               
                 
               </div>
@@ -810,8 +912,7 @@ var boitevitesse=0;
       var prix=0;
 
       function Moto(){
-      document.getElementById("myImage").style.background = "url('nsu-10.jpg')no-repeat center";
-
+      document.getElementById("myImage").style.background = "url('images/nsu-10.jpg')";
       document.getElementById("Essence").style.visibility = "visible";
       document.getElementById("Electrique").style.visibility = "visible";
       document.getElementById("Hybride").style.visibility = "hidden";
@@ -828,7 +929,7 @@ var boitevitesse=0;
      }
 
       function Compact(){
-      document.getElementById("myImage").style.background = "url('car_quotation_testdrive-1c3207a708.png')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/car_quotation_testdrive-1c3207a708.png')no-repeat center";
       document.getElementById("Essence").style.visibility = "visible";
       document.getElementById("Electrique").style.visibility = "hidden";
       document.getElementById("Hybride").style.visibility = "visible";
@@ -844,7 +945,7 @@ var boitevitesse=0;
 
 
       function Citadin(){
-      document.getElementById("myImage").style.background = "url('OIP.jfif')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/OIP.jfif')no-repeat center";
         document.getElementById("Essence").style.visibility = "visible";
       document.getElementById("Electrique").style.visibility = "visible";
       document.getElementById("Hybride").style.visibility = "visible";
@@ -860,7 +961,7 @@ var boitevitesse=0;
      }
 
       function Utilitaire(){
-      document.getElementById("myImage").style.background = "url('7d955da414a9d1de381bcbaff5bdd033.png')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/7d955da414a9d1de381bcbaff5bdd033.png')no-repeat center";
        document.getElementById("Essence").style.visibility = "hidden";
       document.getElementById("Electrique").style.visibility = "hidden";
       document.getElementById("Hybride").style.visibility = "hidden";
@@ -877,7 +978,7 @@ var boitevitesse=0;
 
 
       function Berline(){
-      document.getElementById("myImage").style.background = "url('location-berline-aald-72.jpg')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/location-berline-aald-72.jpg')no-repeat center";
       document.getElementById("Essence").style.visibility = "visible";
       document.getElementById("Electrique").style.visibility = "hidden";
       document.getElementById("Hybride").style.visibility = "visible";
@@ -894,7 +995,7 @@ var boitevitesse=0;
 
 
       function EngindeChantier(){
-      document.getElementById("myImage").style.background = "url('Ra57548c09c7e5da263db209b3ddd8161.jfif')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/Ra57548c09c7e5da263db209b3ddd8161.jfif')no-repeat center";
       document.getElementById("Essence").style.visibility = "visible";
       document.getElementById("Electrique").style.visibility = "hidden";
       document.getElementById("Hybride").style.visibility = "hidden";
@@ -911,7 +1012,7 @@ var boitevitesse=0;
 
 
       function Camion(){
-      document.getElementById("myImage").style.background = "url('7552_540553504.jpg')no-repeat center";
+      document.getElementById("myImage").style.background = "url('images/7552_540553504.jpg')no-repeat center";
       document.getElementById("Essence").style.visibility = "hidden";
       document.getElementById("Electrique").style.visibility = "hidden";
       document.getElementById("Hybride").style.visibility = "hidden";
