@@ -2,6 +2,8 @@
 <html lang="en">
    <head>
 <title>Gallery</title>
+    <meta name="Description" content="Put your description here.">
+    
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style type="text/css">
 
@@ -599,6 +601,119 @@ display: flex;
     margin-bottom: 53px;
     margin-left: -37%;
 }
+}
+
+
+ @media screen and (max-width: 1000px){
+
+
+.menu {
+   
+    width: 100%;
+    height: 12%;
+    left: 0;
+    top: 0;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+box-shadow: 2PX white;
+    transition:all 1s linear;
+
+}
+.menu:hover{
+
+  visibility: visible;
+  height: 12%;
+
+  
+}
+.logo{
+
+    padding-right: 63%;
+    padding-top: 1px;
+    /*height: 50%;
+    width: 10%;*/
+    height: 80px;
+    width: 190px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+  .logob{
+    padding-right: 63%;
+    padding-top: 1px;
+    opacity: 0;
+    height: 80px;
+    width: 190px;
+    visibility: visible;
+    transition:all 1s linear;
+  }
+
+.menu:hover .logo{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 0;
+   
+  }
+  .menu:hover .logob{
+  transition:all 1s linear;
+    height: 80px;
+    width: 160px;
+    opacity: 1;
+  
+  }
+
+
+
+nav ul {
+    position: relative;
+    left: 40%;
+    margin: 20px;
+    visibility: hidden;
+
+} 
+
+
+nav ul li {
+        
+       display: block;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    margin-left: 68%;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 510;
+
+
+    }
+  
+    nav ul li a {
+        text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+      visibility: hidden;
+       line-height: 1.8; 
+
+  }
+.menu:hover nav ul li a {
+
+      
+
+      text-decoration: none;
+      color: #000;
+      padding:  0px  30px;
+       transition:all 1s linear;
+      visibility: visible;
+      line-height: 1.8; 
+      
+  }
+
+
+ }
+
 
 
     </style>
@@ -609,7 +724,7 @@ display: flex;
 <body>
                        
                              <div class="banner1">
-                                 <img src="images/supercar-wallpapers-pagani-4.jpg">
+                                 <img src="images/supercar-wallpapers-pagani-4.jpg" alt="img">
                           
                              </div> 
                       
@@ -623,7 +738,7 @@ display: flex;
                     
                      <div class="box">
                          <div class="boxIn">
-                            <img src="images/Porsche.jfif" >
+                            <img src="images/Porsche.jfif"alt="img" >
                         </div>
                           <div class="prg">
                              <center>
@@ -634,7 +749,7 @@ display: flex;
 
    <div class="box">
                          <div class="boxIn">
-                            <img src="images/lamber.jfif" >
+                            <img src="images/lamber.jfif"alt="img" >
                         </div>
                           <div class="prg">
                              <center>
@@ -649,7 +764,7 @@ display: flex;
 
 <div class="box">
                          <div class="boxIn">
-                            <img src="images/Jaguar.jpg" >
+                            <img src="images/Jaguar.jpg" alt="img">
                         </div>
                           <div class="prg">
                              <center>
@@ -661,7 +776,7 @@ display: flex;
 
   <div class="box">
                          <div class="boxIn">
-                            <img src="images/img1.jpg" >
+                            <img src="images/img1.jpg" alt="img">
                         </div>
                           <div class="prg">
                             <center>
@@ -678,7 +793,7 @@ display: flex;
 
 <div class="box">
                          <div class="boxIn">
-                            <img src="images/moto2.jfif" >
+                            <img src="images/moto2.jfif" alt="img">
                         </div>
                           <div class="prg">
                              <center>
@@ -691,7 +806,7 @@ display: flex;
 
  <div class="box">
                          <div class="boxIn">
-                            <img src="images/moto1.jpg" >
+                            <img src="images/moto1.jpg"alt="img" >
                         </div>
                           <div class="prg"> <center>
                             <B>Hammer</B>
@@ -702,7 +817,7 @@ display: flex;
 
   <div class="box">
                          <div class="boxIn">
-                            <img src="images/Agility.jpg" >
+                            <img src="images/Agility.jpg" alt="img">
                         </div>
                           <div class="prg"> <center>
                             <B>Agility</B>
@@ -713,7 +828,7 @@ display: flex;
 
  <div class="box">
                          <div class="boxIn">
-                            <img src="images/01-Vespa-Elettrica.jpg" >
+                            <img src="images/01-Vespa-Elettrica.jpg"alt="img" >
                         </div>
                           <div class="prg"> <center>
                             <B>Vespa</B>
@@ -728,7 +843,7 @@ display: flex;
 
 <div class="box">
                          <div class="boxIn">
-                            <img src="images/yanmar-yt347-tractor.jpg" >
+                            <img src="images/yanmar-yt347-tractor.jpg" alt="img">
                         </div>
                           <div class="prg">
                              <center>
@@ -741,7 +856,7 @@ display: flex;
 
  <div class="box">
                          <div class="boxIn">
-                            <img src="images/Truck-with-Concrete-Mixer-1.jpg" >
+                            <img src="images/Truck-with-Concrete-Mixer-1.jpg"alt="img" >
                         </div>
                           <div class="prg"> <center>
                             <B>Cement Mixer</B>
@@ -752,7 +867,7 @@ display: flex;
 
   <div class="box">
                          <div class="boxIn">
-                            <img src="images/Show_Truck_Front.jpg" >
+                            <img src="images/Show_Truck_Front.jpg" alt="img">
                         </div>
                           <div class="prg"> <center>
                             <B>Tanker</B>
@@ -763,7 +878,7 @@ display: flex;
 
  <div class="box">
                          <div class="boxIn">
-                            <img src="images/Rf8a6e45d3459bcef01dcc10fa4e49af8.jfif" >
+                            <img src="images/Rf8a6e45d3459bcef01dcc10fa4e49af8.jfif" alt="img">
                         </div>
                           <div class="prg"> <center>
                             <B>Delivrey-Truck</B>
@@ -800,7 +915,7 @@ display: flex;
                  <li> <a href="home.html">Home</a></li>
                     <li> <a href="gallery.html" style="color:#b32137;">GALLERY</a></li>
                     <li><a href="reservation.html">Reservation</a></li>
-                    <li><a href="contact.html" >Contact US</a></li>
+                    <li><a href="contact.html" >Contact</a></li>
                     
                               
                 </ul>
@@ -824,7 +939,7 @@ display: flex;
              
               <span></span>
               <div class="line">
-               <img src="images/AUTOABDA_black.png">
+               <img src="images/AUTOABDA_black.png"alt="img">
                <!-- <b>FATYcar.com</b> -->
                 
               </div>
