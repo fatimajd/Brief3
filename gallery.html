@@ -18,6 +18,13 @@
   background-color: black;
   
 }
+.icon {
+    font-size: 2.4em;
+    color: #ffffff;
+    line-height: 50px;
+    padding-left: 94%;
+    visibility: hidden;
+    }
 
 .menu {
    
@@ -605,8 +612,21 @@ display: flex;
 
 
  @media screen and (max-width: 1000px){
+  .icon {
+    font-size: 5.4em;
+    color: #ffffff;
+    line-height: 50px;
+    padding-left: 84%;
+    visibility: visible;
+    padding-top: 10%;
 
+    
+    }
 
+  i{
+  position: absolute;
+  padding-top: 28%;
+}
 .menu {
    
     width: 100%;
@@ -624,7 +644,7 @@ box-shadow: 2PX white;
 .menu:hover{
 
   visibility: visible;
-  height: 12%;
+  height: 18%;;
 
   
 }
@@ -725,6 +745,9 @@ nav ul li {
                        
                              <div class="banner1">
                                  <img src="images/supercar-wallpapers-pagani-4.jpg" alt="img">
+                                 <label class="right" for="checkbox">
+                                  <i class="fa fa-bars icon"></i>
+                              </label>
                           
                              </div> 
                       
